@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   get "/teste1", to: "main#teste1"
   post "/testerest", to: "main#rest1"
+  put "" , to: "main#rest1"
+  delete "" , to: "main#rest1"
 
+  get "/monitor1", to: "main#monitoraRobotizando"
 
 end
