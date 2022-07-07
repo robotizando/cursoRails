@@ -73,10 +73,16 @@ class MainController < ApplicationController
     @token = "asikxueryndqw7rydcqo837n9r0cda9we8fm8we,0c"
 
     if params[:token] == @token
+      
+      AlertMailer.with(teste: "Teste de parametro simples").alert_robotizando.deliver_now
 
         responseService = getMonitor
 
         if responseService["error"]
+          # send email
+
+
+
           render json: responseService  , content_type: 'application/json', status: 418
         else
           render json: responseService , content_type: 'application/json'

@@ -13,7 +13,7 @@ s = Rufus::Scheduler.singleton
 s.every '3s' do
 
 
-  c = MainController.new
-  r = c.getMonitor
-  Rails.logger.info r.to_json +  "#{Time.now}"
+  #c = MainController.new
+  #r = c.getMonitor
+  #Rails.logger.info r.to_json +  "#{Time.now}"
 end
